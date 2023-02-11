@@ -11,7 +11,9 @@
   
   <title>
     
-      Solaris
+      archive_a: 2023 
+      
+      
     
   </title>
 
@@ -26,10 +28,6 @@
 <link rel="stylesheet" href="/css/common.css">
 <link rel="stylesheet" href="/iconfont/iconfont.css">
 
-
-  
-    
-<link rel="stylesheet" href="/css/index.css">
 
   
 
@@ -93,83 +91,106 @@
 
 
       <div class="main">
-        <div>
-  <ul>
-    <!-- 遍历渲染文章 -->
+        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+
+<!-- last: 按年份把文章分组，当前遍历到的年份 -->
+<!-- now: 当前遍历到的文章的发布年份 -->
+
+<div class="container archives">
+  <div class="post-list">
     
-    <li>
-      <h3>Feb 11, 2023</h3>
-      <h2>
-        <a href="/2023/02/11/230211/">
-          
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2023</span>
+          </h2>
+        </div>
+      
+      <div class="post-item" title="test">
+        <div class="time-m-d">02-11</div>
+        <div class="title">
+          <a href="/2023/02/11/230211/">
             
               <span>test</span>
             
-          
-        </a>
-      </h2>
-    </li>
+          </a>
+        </div>
+      </div>
     
-    <li>
-      <h3>Nov 12, 2022</h3>
-      <h2>
-        <a href="/2022/11/12/221112/">
-          
+        <!-- 后续文章的发布年份呈现 -->
+        <div class="content-title">
+          <h2>
+            <span>2022</span>
+          </h2>
+        </div>
+      
+      <div class="post-item" title="山高路远，看世界，找自己">
+        <div class="time-m-d">11-12</div>
+        <div class="title">
+          <a href="/2022/11/12/221112/">
             
               <span>山高路远，看世界，找自己</span>
             
-          
-        </a>
-      </h2>
-    </li>
+          </a>
+        </div>
+      </div>
     
-    <li>
-      <h3>Oct 15, 2022</h3>
-      <h2>
-        <a href="/2022/10/15/221015/">
-          
+      <div class="post-item" title="热爱生活">
+        <div class="time-m-d">10-15</div>
+        <div class="title">
+          <a href="/2022/10/15/221015/">
             
               <span>热爱生活</span>
             
-          
-        </a>
-      </h2>
-    </li>
+          </a>
+        </div>
+      </div>
     
-    <li>
-      <h3>Oct 03, 2022</h3>
-      <h2>
-        <a href="/2022/10/03/221003/">
-          
+      <div class="post-item" title="十月">
+        <div class="time-m-d">10-03</div>
+        <div class="title">
+          <a href="/2022/10/03/221003/">
             
               <span>十月</span>
             
-          
-        </a>
-      </h2>
-    </li>
+          </a>
+        </div>
+      </div>
     
-    <li>
-      <h3>Sep 30, 2022</h3>
-      <h2>
-        <a href="/2022/09/30/220930/">
-          
+      <div class="post-item" title="Flowers for Algernon">
+        <div class="time-m-d">09-30</div>
+        <div class="title">
+          <a href="/2022/09/30/220930/">
             
               <span>Flowers for Algernon</span>
             
-          
-        </a>
-      </h2>
-    </li>
+          </a>
+        </div>
+      </div>
     
-  </ul>
-  
-  <nav class="post-navigation">
+      <div class="post-item" title="不知梦起何处，但见圆梦今朝">
+        <div class="time-m-d">09-01</div>
+        <div class="title">
+          <a href="/2022/09/01/220901/">
+            
+              <span>不知梦起何处，但见圆梦今朝</span>
+            
+          </a>
+        </div>
+      </div>
     
+      <div class="post-item" title="最后的假期">
+        <div class="time-m-d">08-01</div>
+        <div class="title">
+          <a href="/2022/08/01/220801/">
+            
+              <span>最后的假期</span>
+            
+          </a>
+        </div>
+      </div>
     
-      <a id="next" class="index-nav" href="/page/2/">OLDER&nbsp;&gt;</a>
-    
-  </nav>
+  </div>
 </div>
 
         <div class="footer">
