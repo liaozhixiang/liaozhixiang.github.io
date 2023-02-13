@@ -1,179 +1,292 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="" />
-  <meta name="author" content="Leo" />
-  <meta name="description" content="" />
-  
-  
-  <title>
-    
-      不知梦起何处，但见圆梦今朝 
-      
-      
-    
-  </title>
-
+<head>
   
 
-  <!-- Raleway-Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,400italic,600|Roboto+Mono" rel="stylesheet">
 
-  <!-- hexo site css -->
-  
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/iconfont/iconfont.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>初遇 [ Solaris ]</title>
+
+  <link rel="icon" href="/img/ico.png">
+
+
+    <meta name="author" content="Leo">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml " title="Solaris" type="application/atom+xml">
 
 
   
-
+    <link rel="stylesheet" href="/css/main.css">
   
-    
-<link rel="stylesheet" href="/css/post.css">
-
-  
-
-  <!-- jquery3.3.1 -->
-  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- fancybox -->
-  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
-  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
-  
-<script src="/js/fancybox.js"></script>
-
 
 <meta name="generator" content="Hexo 5.4.2"></head>
-
-
-  <body>
-    <div id="app">
-      <div class="header">
-  <a href="/">LEO</a>
-</div>
-
-
-      <p class="links">
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-</p>
-
-
-      <div class="main">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
-
-<!-- LaTex Display -->
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
-  };
-</script>
-
-<div class="post">
-  <h3 class="date">
-    Sep 01, 2022
-  </h3>
-  <h1>
-    不知梦起何处，但见圆梦今朝
-  </h1>
-  <div class="content markdown-body">
-    <hr>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220902_18_23_06_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220902_18_47_19_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220905_10_32_12_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-IMG_20220906_150927.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220907_18_18_23_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220916_12_00_14_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220917_16_15_48_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220917_17_13_43_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220919_12_02_37_Pro__highres.jpg"></p>
-<p><img src="https://raw.githubusercontent.com/liaozhixiang/Pictures/master/WEB-WP_20220929_18_29_30_Pro__highres.jpg"></p>
-<hr>
-<p><em>Shot on Nokia Lumia 1020</em></p>
-
-  </div>
-  
-    
-      <a id="older" class="blog-nav" href="/2022/08/01/220801/">OLDER&nbsp;&gt;</a>
+  <body data-theme="light" class="notransition">
+    <script>
+      const body = document.body;
+      const data = body.getAttribute("data-theme");
+      const initTheme = (state) => {
+        if (state === "dark") {
+          body.setAttribute("data-theme", "dark");
+        } else if (state === "light") {
+          body.removeAttribute("data-theme");
+        } else {
+          localStorage.setItem("theme", data);
+        }
+      };
+   
+      initTheme(localStorage.getItem("theme"));
       
-        
-          <a id="newer" class="blog-nav" href="/2022/09/30/220930/">&lt;&nbsp;NEWER</a>
+      setTimeout(() => body.classList.remove("notransition"), 75);
+    </script>
+  <div class="navbar" role="navigation">
+    <nav class="menu">
+      <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+      <label for="menu-trigger">
+        <span class="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+            />
+          </svg>
+        </span>
+      </label>
+      <a id="mode">
+        <svg
+          class="mode-sunny"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>LIGHT</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+        <svg
+          class="mode-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>DARK</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+      </a>
+      <div class="trigger">
+        <div class="trigger-container">
           
             
-</div>
-        <div class="footer">
-  
-    <div class="footer-more">
-      
-        Copyright © Leo 2022
-        
-    </div>
-  
-    <div class="footer-more">
-      
-        Powered by Hexo
-        
-    </div>
-  
-</div>
-
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/"> 主页</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/archives/"> 时间线</a>
+          
+        </div>
       </div>
+    </nav>
+  </div>
+  
+<div class="wrapper post">
+  <main class="page-content" aria-label="Content">
+      <header class="header">
+        
+        <h1 class="header-title" itemprop="headline">初遇</h1>
+          <div class="post-meta">
+            <time>Sep 01, 2022</time>
+            <span itemprop="author">
+              <span itemprop="name">Leo</span>
+            </span>
+          </div>
+        </header>
 
-      <div class="back-to-top hidden">
-  <a href="javascript: void(0)">
-    <i class="iconfont icon-chevronup"></i>
-  </a>
+          <div class="page-content"><hr>
+<hr>
+<p>由 Nokia Lumia 1020 拍摄</p>
+</div>
+          <nav class="post-nav">
+    
+    <a class="post-nav-item post-nav-prev" href="/2022/09/30/220930/">
+      <div class="nav-arrow">&lt;&nbsp;NEWER</div>
+      <span class="post-title">献给阿尔吉侬的花束</span>
+    </a>
+    
+    
+    <a class="post-nav-item post-nav-next" href="/2022/08/01/220801/">
+      <div class="nav-arrow">OLDER&nbsp;&gt;</div>
+      <span class="post-title">假期</span>
+    </a>
+    
+  </nav>
+
+   </main>
 </div>
 
+  <footer class="footer">
+    <small class="footer_copyright">
+      <div id="bottom-inner">
+        2023 Site by leo | Powerd by hexo with theme Klise
+      </div>
+    </small>
+  </footer>
+  
+  
 
-<script src="/js/backtotop.js"></script>
-
-
-
-      
-
-
-    </div>
-  </body>
+    
+      <script src="/js/main.js"></script>
+    
+  
+  <script>
+    window.FPConfig = {
+      delay: 0,
+      ignoreKeywords: [],
+      maxRPS: 3,
+      hoverDelay: 50,
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+</body>
 </html>

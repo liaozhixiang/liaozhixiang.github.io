@@ -1,209 +1,329 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="" />
-  <meta name="author" content="Leo" />
-  <meta name="description" content="" />
-  
-  
-  <title>
-    
-      Solaris
-    
-  </title>
-
+<head>
   
 
-  <!-- Raleway-Font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,400italic,600|Roboto+Mono" rel="stylesheet">
 
-  <!-- hexo site css -->
-  
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/iconfont/iconfont.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> [ Solaris ]</title>
+
+  <link rel="icon" href="/img/ico.png">
+
+
+    <meta name="author" content="Leo">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml " title="Solaris" type="application/atom+xml">
 
 
   
-    
-<link rel="stylesheet" href="/css/index.css">
-
+    <link rel="stylesheet" href="/css/main.css">
   
-
-  
-
-  <!-- jquery3.3.1 -->
-  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-
-  <!-- fancybox -->
-  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
-  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
-  
-<script src="/js/fancybox.js"></script>
-
 
 <meta name="generator" content="Hexo 5.4.2"></head>
-
-
-  <body>
-    <div id="app">
-      <div class="header">
-  <a href="/">LEO</a>
-</div>
-
-
-      <p class="links">
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-    <a title="" target="" href="">
-      <i class="iconfont icon-"></i>
-    </a>
-  
-</p>
-
-
-      <div class="main">
-        <div>
-  <ul>
-    <!-- 遍历渲染文章 -->
-    
-    <li>
-      <h3>Feb 11, 2023</h3>
-      <h2>
-        <a href="/2023/02/11/230211/">
-          
-            
-              <span>test</span>
-            
-          
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h3>Nov 12, 2022</h3>
-      <h2>
-        <a href="/2022/11/12/221112/">
-          
-            
-              <span>山高路远，看世界，找自己</span>
-            
-          
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h3>Oct 15, 2022</h3>
-      <h2>
-        <a href="/2022/10/15/221015/">
-          
-            
-              <span>热爱生活</span>
-            
-          
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h3>Oct 03, 2022</h3>
-      <h2>
-        <a href="/2022/10/03/221003/">
-          
-            
-              <span>十月</span>
-            
-          
-        </a>
-      </h2>
-    </li>
-    
-    <li>
-      <h3>Sep 30, 2022</h3>
-      <h2>
-        <a href="/2022/09/30/220930/">
-          
-            
-              <span>Flowers for Algernon</span>
-            
-          
-        </a>
-      </h2>
-    </li>
-    
-  </ul>
-  
-  <nav class="post-navigation">
-    
-    
-      <a id="next" class="index-nav" href="/page/2/">OLDER&nbsp;&gt;</a>
-    
-  </nav>
-</div>
-
-        <div class="footer">
-  
-    <div class="footer-more">
+  <body data-theme="light" class="notransition">
+    <script>
+      const body = document.body;
+      const data = body.getAttribute("data-theme");
+      const initTheme = (state) => {
+        if (state === "dark") {
+          body.setAttribute("data-theme", "dark");
+        } else if (state === "light") {
+          body.removeAttribute("data-theme");
+        } else {
+          localStorage.setItem("theme", data);
+        }
+      };
+   
+      initTheme(localStorage.getItem("theme"));
       
-        Copyright © Leo 2022
-        
-    </div>
-  
-    <div class="footer-more">
-      
-        Powered by Hexo
-        
-    </div>
-  
-</div>
-
+      setTimeout(() => body.classList.remove("notransition"), 75);
+    </script>
+  <div class="navbar" role="navigation">
+    <nav class="menu">
+      <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+      <label for="menu-trigger">
+        <span class="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+            />
+          </svg>
+        </span>
+      </label>
+      <a id="mode">
+        <svg
+          class="mode-sunny"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>LIGHT</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+        <svg
+          class="mode-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <title>DARK</title>
+          <line
+            x1="256"
+            y1="48"
+            x2="256"
+            y2="96"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="256"
+            y1="416"
+            x2="256"
+            y2="464"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="108.92"
+            x2="369.14"
+            y2="142.86"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="369.14"
+            x2="108.92"
+            y2="403.08"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="464"
+            y1="256"
+            x2="416"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="96"
+            y1="256"
+            x2="48"
+            y2="256"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="403.08"
+            y1="403.08"
+            x2="369.14"
+            y2="369.14"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <line
+            x1="142.86"
+            y1="142.86"
+            x2="108.92"
+            y2="108.92"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+          <circle
+            cx="256"
+            cy="256"
+            r="80"
+            style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+          />
+        </svg>
+      </a>
+      <div class="trigger">
+        <div class="trigger-container">
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link active" href="/"> 主页</a>
+          
+            
+            
+            
+            
+            
+            
+            <a class="menu-link " href="/archives/"> 时间线</a>
+          
+        </div>
       </div>
-
-      <div class="back-to-top hidden">
-  <a href="javascript: void(0)">
-    <i class="iconfont icon-chevronup"></i>
-  </a>
-</div>
-
-
-<script src="/js/backtotop.js"></script>
-
-
-
+    </nav>
+  </div>
+  
+  <div class="wrapper">
+    <div class="author">
+        <div class="author-avatar-wrapper">
+          <img
+            class="author-avatar"
+            src="https://cdn.jsdelivr.net/gh/dewjohn/CDN@latest/images/avatar.webp"
+            alt="avatar"
+            loading="lazy"
+          />
+      </div>
+      <h2 class="author-name">Leo</h2>
+      <p class="author-bio">生活就在每个熟视无睹的瞬间</p>
+    </div>
+    <main aria-label="Content">
       
 
+    <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
+    
+      <article class="post-item">
+        <span class="post-item-date" datetime="2023-02-11T12:00:00.000Z">Feb 11, 2023</span>
+        <h4 class="post-item-title">
+          <a href="/2023/02/11/230211/">二月</a>
+        </h4>
+      </article>
+    
+      <article class="post-item">
+        <span class="post-item-date" datetime="2022-11-12T12:00:00.000Z">Nov 12, 2022</span>
+        <h4 class="post-item-title">
+          <a href="/2022/11/12/221112/">十一月</a>
+        </h4>
+      </article>
+    
+      <article class="post-item">
+        <span class="post-item-date" datetime="2022-10-15T12:00:00.000Z">Oct 15, 2022</span>
+        <h4 class="post-item-title">
+          <a href="/2022/10/15/221015/">热爱生活</a>
+        </h4>
+      </article>
+    
+      <article class="post-item">
+        <span class="post-item-date" datetime="2022-10-03T12:00:00.000Z">Oct 03, 2022</span>
+        <h4 class="post-item-title">
+          <a href="/2022/10/03/221003/">十月</a>
+        </h4>
+      </article>
+    
+      <article class="post-item">
+        <span class="post-item-date" datetime="2022-09-30T12:00:00.000Z">Sep 30, 2022</span>
+        <h4 class="post-item-title">
+          <a href="/2022/09/30/220930/">献给阿尔吉侬的花束</a>
+        </h4>
+      </article>
+    
+      <article class="post-item">
+        <span class="post-item-date" datetime="2022-09-01T12:00:00.000Z">Sep 01, 2022</span>
+        <h4 class="post-item-title">
+          <a href="/2022/09/01/220901/">初遇</a>
+        </h4>
+      </article>
+    
+      <article class="post-item">
+        <span class="post-item-date" datetime="2022-08-01T12:00:00.000Z">Aug 01, 2022</span>
+        <h4 class="post-item-title">
+          <a href="/2022/08/01/220801/">假期</a>
+        </h4>
+      </article>
+    
 
-    </div>
-  </body>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <small class="footer_copyright">
+      <div id="bottom-inner">
+        2023 Site by leo | Powerd by hexo with theme Klise
+      </div>
+    </small>
+  </footer>
+  
+  
+
+    
+      <script src="/js/main.js"></script>
+    
+  
+  <script>
+    window.FPConfig = {
+      delay: 0,
+      ignoreKeywords: [],
+      maxRPS: 3,
+      hoverDelay: 50,
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+</body>
 </html>
